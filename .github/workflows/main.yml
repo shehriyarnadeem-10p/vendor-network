@@ -25,7 +25,10 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::918360564172:role/github-oidc-connect
           role-session-name: samplerolesession
+          aws-access-key-id: 64ySwePbYR6q3wosg2kz9hdvotvrAkUyfRemZ4cF
+          aws-secret-access-key: AKIA5LUUOEHGFRT5MWVF
           aws-region: us-east-1
+          
 
       - name: Setup Terraform 
         uses: hashicorp/setup-terraform@v2
