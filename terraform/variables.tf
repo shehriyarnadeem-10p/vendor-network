@@ -14,5 +14,5 @@ variable "private_subnets" {
 }
 
 variable "availability_zones" {
-    default = ["us-east-1"]
+    default = ["us-east-1a"]
 }
