@@ -8,7 +8,7 @@ resource "aws_route_table" "public_1" {
 
 resource "aws_route" "public_1" {
     route_table_id = aws_route_table.public_1.id
-    destnization_cidr_block = "0.0.0.0/0"
+    destination_cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
 }
 
@@ -30,7 +30,7 @@ resource "aws_route_table" "public_2" {
 
 resource "aws_route" "public_2" {
     route_table_id = aws_route_table.public_2.id
-    destnization_cidr_block = "0.0.0.0/0"
+    destination_cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
 }
 
@@ -51,7 +51,7 @@ resource "aws_route_table" "private_1" {
 
 resource "aws_route" "private_1" {
     route_table_id = aws_route_table.private_1.id
-    destnization_cidr_block = "0.0.0.0/0"
+    destination_cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.ngw1.id
 }
 
@@ -75,7 +75,7 @@ resource "aws_route_table" "private_2" {
 
 resource "aws_route" "private_2" {
     route_table_id = aws_route_table.private_2.id
-    destnization_cidr_block = "0.0.0.0/0"
+    destination_cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.ngw2.id
 }
 
